@@ -6,6 +6,8 @@
   <title>لعبة تخمين الرقم</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
   <div class="game-container">
     <h1>لعبة تخمين الرقم</h1>
@@ -14,9 +16,52 @@
     <button onclick="checkGuess()">تحقق</button>
     <p id="message"></p>
     <button onclick="resetGame()" class="reset-btn">إعادة اللعب</button>
-  </div>
-  <script src="script.js"></script>
 
+
+
+
+<!-- زر الترتيب الأسبوعي -->
+<button id="showLeaderboardBtn">📊 الترتيب الأسبوعي</button>
+
+<!-- نافذة الترتيب الأسبوعي -->
+<div id="leaderboardModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtn">&times;</span>
+    <h2>🏆 الترتيب الأسبوعي</h2>
+    <ol id="leaderboardList">
+      <li> </li>
+      <li> </li>
+      <li> </li>
+	   <li> </li>
+	   <li> </li>
+    </ol>
+
+    <hr>
+
+    <p id="howToJoinQuestion" class="question-link">كيف أكون في القائمة؟</p>
+
+    <div id="requirements" class="requirements-box" style="display: none;">
+      <ul>
+        <li> يجب أن تكون قد خمّنت الرقم في عدد محاولات مميز .</li>
+
+<li> يجب أن تقوم بإجراء محادثة في خاص <a href="https://discord.com/users/u7a7" target="_blank" style="color: var(--link-color, #007BFF); text-decoration: underline;">u7a7</a> .</li>
+
+
+
+        <li>يجب أرفاق دليل .</li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
