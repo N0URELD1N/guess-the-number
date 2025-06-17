@@ -32,3 +32,36 @@ function resetGame() {
   document.getElementById("guessInput").value = '';
   document.getElementById("message").textContent = '';
 }
+
+
+
+
+
+
+  const modal = document.getElementById("leaderboardModal");
+  const btn = document.getElementById("showLeaderboardBtn");
+  const span = document.querySelector(".close");
+  const howToJoin = document.getElementById("howToJoinQuestion");
+  const requirements = document.getElementById("requirements");
+
+  // فتح النافذة
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  // إغلاق عند الضغط على ×
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // إغلاق عند الضغط خارج المربع
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  // عرض المتطلبات
+  howToJoin.onclick = function () {
+    requirements.style.display = requirements.style.display === "none" ? "block" : "none";
+  };
