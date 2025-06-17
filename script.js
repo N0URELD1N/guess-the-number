@@ -1,4 +1,9 @@
 // script.js
+
+// إرسلل تنبيه
+alert(" Welcome, the weekly ranking list has been successfully added !")
+
+
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 
