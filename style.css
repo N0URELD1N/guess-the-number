@@ -120,3 +120,11 @@ button:hover {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+
+  font-size: 14px;
+  color: #ff8c00;
+}
