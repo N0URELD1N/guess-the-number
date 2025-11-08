@@ -24,7 +24,7 @@ function checkGuess() {
     message.style.color = "green";
   } else if (guess < randomNumber) {
     message.textContent = "The number is bigger than the number you guessed!";
-    message.style.color = "blue";
+    message.style.color = "Purple";
   } else {
     message.textContent = "The number is lower than the number you guessed !";
     message.style.color = "blue";
