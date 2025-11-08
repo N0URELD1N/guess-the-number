@@ -1,7 +1,7 @@
 // script.js
 
 // إرسلل تنبيه
-alert(" Welcome, the weekly ranking list has been successfully added !")
+alert(" Welcome, all of the website is in English now!")
 
 
 let randomNumber = Math.floor(Math.random() * 100) + 1;
